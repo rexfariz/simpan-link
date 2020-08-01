@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simpan Link!</title>
+</head>
+
+<body>
+
+    <nav id="nav">
+        <div class="container" id="navContainer">
+            <h1 class="nav-header">Simpan Link!</h1>
+            <a id="addButton">+</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="addLinkContainer" class="full-screen-opaque hidden">
+            <div class="panel" id="addLinkPanel">
+
+                <h3 class="header">Tambah Link</h3>
+                <form id="addLinkForm">
+                    <input type="text" name="title" id="linkTitle" class="form-control" placeholder="Judul">
+                    <input type="text" name="url" id="linkUrl" class="form-control" placeholder="URL">
+                    <input type="text" name="category" id="linkCategory" class="form-control" placeholder="Kategori (pisahkan dengan koma)">
+
+                    <div id="addCategory"></div>
+
+                    <input type="submit" id="submitButton" value="Tambah">
+                    <input type="submit" id="cancelButton" value="Batal">
+
+                </form>
+            </div>
+        </div>
+
+        <div id="linkList"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
